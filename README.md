@@ -1,4 +1,4 @@
-# malikallen1.github.io
+# Malik's GitHub Portfolio
 ###### Here is my GitHub portfolio for Programming. 
 [Click here to view my GitHub page.](github.com/malikallen1)
 # Adventure Game
