@@ -5,7 +5,7 @@
 ![Adventure Game](https://raw.githubusercontent.com/malikallen1/malikallen1.github.io/main/AdventureGameScreenshot.JPG)
 ###### This was my midterm assignment for a text-based adventure game.
 # Adopt a Robot
-![Adopt an Robot]()
+![Adopt an Robot](https://raw.githubusercontent.com/malikallen1/malikallen1.github.io/main/AdoptaRobotScreenshot.JPG)
 ###### This was an assignment that was intended to demonstrate refactoring.
 # Store Application
 ![Store Application]()
