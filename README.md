@@ -14,5 +14,5 @@
 ![Store Application]()
 ###### This was a group assignment that I was a part of in week 3.
 # Tip Calculator
-![Tip Calculator]()
+![Tip Calculator](https://raw.githubusercontent.com/malikallen1/malikallen1.github.io/main/TipCalculatorScreenshot.JPG)
 ###### This was a tip calculator that I made for class.
