@@ -4,9 +4,9 @@
 # Adventure Game
 ![Adventure Game](https://raw.githubusercontent.com/malikallen1/malikallen1.github.io/main/AdventureGameScreenshot.JPG)
 ###### This was my midterm assignment for a text-based adventure game.
-# Adopt an Insect
-![Adopt an Insect]()
-###### This was a group assignment that I was a part of in week 2.
+# Adopt a Robot
+![Adopt an Robot]()
+###### This was an assignment that was intended to demonstrate refactoring.
 # Store Application
 ![Store Application]()
 ###### This was a group assignment that I was a part of in week 3.
