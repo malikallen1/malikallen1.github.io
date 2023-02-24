@@ -1,0 +1,96 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+body {
+    background: #599ffc;
+}
+
+#container {
+    border: 1px solid black;
+    width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+h1, h2 {
+    font-family: 'Oswald', sans-serif;
+}
+
+h1:hover {
+    animation-delay: 2s;
+    animation: animationONE 3s infinite alternate;
+}
+
+h2:hover {
+    animation-delay: 2s;
+    animation: animationONE 3s infinite alternate;
+}
+
+@keyframes animationONE {
+    0% {color: black;}
+    50% {font-size: 2em;}
+    100% {color: blue;}
+}
+
+p {
+    width: 300px;
+    color: white;
+    margin: 0px;
+}
+
+p.gray {
+    background: rgb(131, 131, 131);
+    transition: all 3s;
+}
+
+p.gray:hover {
+    background: rgb(0, 0, 0);
+    width: 400px;
+    transform: scale(3,3) translate(100px, 100px) rotate(-360deg);
+}
+
+p.dark-gray {
+    background: rgb(61, 61, 61);
+    transition: all 3s;
+    /*position: absolute;
+    bottom: -30px;
+    right: -30px;*/
+    /*position: fixed;
+    top: 50px;
+    right: 50px;*/
+}
+
+p.dark-gray:hover {
+    background: rgb(255, 255, 255);
+    color: black;
+    width: 400px;
+    transform: scale(3,3) translate(90px, 90px) rotate(360deg);
+}
+
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0px;
+    border-top: 1px solid #ccc;
+    margin: 1em 0px;
+    padding: 0px;
+}
+
+
+@media all and (min-width: 768px) {
+
+}
+
+@media all and (min-width: 1024px) {
+
+}
