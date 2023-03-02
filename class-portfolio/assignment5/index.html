@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Unfolding Interface with jQuery</title>
+        <link rel="stylesheet" href="css/style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="container">
+            <header>
+                <h1>The History of the Internet</h1>
+            </header>
+
+            <button id="viewcontent">View Content</button>
+            <button id="redecorator">Change the Page Style</button>
+            <button id="embededcontent">View Embeded Video</button>
+
+            <main>
+                <section>
+                    <figure class="hidden">
+                        <img src="img/TheWWWGlobe.jpg" alt="TheWWWGlobe">
+                    </figure>
+                    <p class="hidden">In the year 1960, the internet was used by government researchers to share information with each other. In 1972, the ARPANET was first demonstrated to the general public. In 1974, a commercial version of the ARPANET known as the Telenet was introduced. On August 6, 1991, Tim Berners-Lee introduced the World Wide Web (WWW) and unveiled the very first webpage to the general public. In 1993, the Web source code entered the public domain.</p>
+                    <p class="hidden">In 1995, Netscape introduced the Secure Sockets Layer (SSL). In the same year, the dot-com boom began. In 1997, the Wi-Fi standard was introduced by the IEEE. In 2000, the dot-com bubble began to decrease. In 2004, the Mozilla Firefox web browser by Mozilla was released. In 2014, the W3C recommended and released the HTML5 programming language to the general public.</p>
+                    <video controls src="video/TheWWWGlobeAnimation.mp4" width="500"></video>
+                </section>
+            </main>
+
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        
+        <script>
+            $(document).ready(function() {
+                
+                $("p.hidden").hide();
+
+                $("p.special").hide();
+
+                $("figure.hidden").hide();
+
+                $("video").hide();
+
+                $("button#viewcontent").click(function() {
+                    $("p.hidden").slideToggle();
+                    $("figure.hidden").fadeToggle();
+                });
+
+                $("button#embededcontent").click(function() {
+                    $("video").fadeToggle();
+                });
+
+                $("button#redecorator").click(function() {
+                    $("p").css("background","#0564e1")
+                    $("body").addClass("WebStyleChange");
+                });
+            });
+        </script>
+        <footer>&#169; Malik Allen</footer>
+    </body>
+</html>
