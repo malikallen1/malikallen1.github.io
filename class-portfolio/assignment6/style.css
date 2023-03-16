@@ -1,0 +1,106 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4em;
+}
+
+body {
+
+}
+
+#container {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header, section {
+    background: #006eff;
+    padding: 25px;
+    color: black;
+}
+
+.TextChange {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: #004094;
+    color: white;
+}
+
+.ColorChange {
+    background: #dd9000;
+}
+
+#Image1, #Image2, #Image3, #Image4, #Image5, #Image6 {
+    height: 700px;
+}
+
+#Image1 {
+    background:url('img/Image1.gif') no-repeat fixed center;
+    background-size: cover;
+    position: relative;
+    opacity: 1;
+
+}
+#Image2 {
+    background:url('img/Image2.gif') no-repeat fixed center;
+    background-size: cover;
+    position: relative;
+}
+#Image3 {
+    background:url('img/Image3.jpg') no-repeat fixed center;
+    background-size: cover;
+}
+
+#Image4 {
+    background:url('img/Image4.jpg') no-repeat fixed center;
+    background-size: cover;
+}
+
+#Image5 {
+    background:url('img/Image5.gif') no-repeat fixed center;
+    background-size: cover;
+}
+
+#Image6 {
+    background:url('img/Image6.gif') no-repeat fixed center;
+    background-size: cover;
+}
+
+#Image1 h1 {
+    color: red;
+    font-size: 150%;
+    line-height: 150%;
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+}
+
+#Image2 h1 {
+    color: blue;
+    font-size: 150%;
+    line-height: 150%;
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0px;
+    border-top: 1px solid #ccc;
+    margin: 1em 0px;
+    padding: 0px;
+}
+
+
+@media all and (min-width: 768px) {
+
+}
+
+@media all and (min-width: 1024px) {
+    
+}

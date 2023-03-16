@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Scrolling Effects with CSS/JS</title>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+    </head>
+
+    <main>
+        <body>
+            <div id="container">
+                <header>
+                    <h1>The History of JavaScript + The Signficance of JavaScript</h1>
+                </header>
+                
+                <div id="Image1">
+                    <h1>JavaScript is a programming language with first-class functions.</h1>
+                </div>
+                <section id="SectionOne">
+                    <p>In 1995, JavaScript was invented by Brendan Eich. In 1996, Netscape 2 was released with JavaScript 1.0. JavaScript eventually became an ECMA standard in 1997. ECMAScript 1 was released later that same year. Internet Explorer became the first browser to support ECMAScript 1 in 1997.</p>
+                </section>
+    
+                <div id="Image2">
+                    <h1>According to Mozilla's Development Documents, JavaScript's dynamic capabilities include runtime object construction, variable parameter lists, function variables, dynamic script creation, object introspection, and source-code recovery.</h1>
+                </div>
+                <section id="SectionTwo">
+                    <p>In 1998, ECMAScript 2 was released and Netscape 42 was released with JavaScript 1.3. In 1999, Internet Explorer 5 became the first browser to support ECMAScript 2. Later that same year, ECMAScript 3 was released. In 2000, Firefox 1 was released with JavaScript 1.5. JavaScript eventually became supported with all modern browsers.</p>
+                </section>
+    
+                <div id="Image3"></div>
+                <section id="SectionThree">
+                    <p>JavaScript is not related to the Java programming language. Those two programming languages have very different syntax, semantics, and use. The core language for JavaScript, ECMAScript, can be defined as a language syntax, an error handling mechanism, type, a prototype-based inheritance mechanism, a built-in object, a strict mode, a module system, or a basic memory model. </p>
+                </section>
+
+                <div id="Image4"></div>
+                <section id="SectionFour">
+                    <p>JavaScript can be used for a lot of impressive things. According to Mozilla, the core client-side JavaScript can store useful values inside variables. JavaScript can also let you create operations on strings of text. It can even run code in response to certain events that happen on a website. Application Programming Interfaces can be used alongside JavaScript.</p>
+                </section>
+
+                <div id="Image5"></div>
+                <section id="SectionFive">
+                    <p>According of Mozilla, Application Programming Interfaces (APIs) can be used to implement programs that are normally viewed as impossible to implement. There are two types of APIs that are programmed with JavaScript. Those two types of APIs are Browser APIs and third party APIs. JavaScript is easy to implement in any programming software. JavaScript can be used to upgrade a webpage's design.</p>
+                </section>
+
+                <div id="Image6"></div>
+                <section id="SectionSix">
+                    <p>In conclusion, JavaScript is used by a lot of web designers for very impressive things. People can use JavaScript to improve their website's presentation. These improvements can be viewed on all modern web browsers. JavaScript can be used in tandem with HTML and CSS. This is the end of the webpage for The History of JavaScript + The Signficance of JavaScript.</p>
+                </section>
+            </div>
+    
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+            <script>
+                $(document).ready(function() {
+                    $(window).scroll(function(){
+                        var windowPosition=$(window).scrollTop();
+
+                        if (windowPosition>1000) {
+                            $('section').addClass('TextChange');
+                        } else {
+                            $('section').removeClass('TextChange');
+                        }
+
+                        if (windowPosition<1000) {
+                            $('header').addClass('ColorChange');
+                        } else {
+                            $('header').removeClass('ColorChange');
+                        }
+
+                        $('#Image1').css('opacity', 1-$(window).scrollTop()/250);
+                    });
+                });
+            </script>
+            <footer>&#169; Malik Allen, All Rights Reserved</footer>
+        </body>
+    </main>
+</html>
